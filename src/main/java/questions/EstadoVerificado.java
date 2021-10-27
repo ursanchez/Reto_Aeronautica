@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.questions.Text;
 public class EstadoVerificado implements Question<String> {
     @Override
     public String answeredBy(Actor actor) {
-        return Text.of().viewedBy(actor).asString();
+        return Text.of("").viewedBy(actor).asString();
     }
 
     public static EstadoVerificado financiero() {
