@@ -13,7 +13,10 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
 import static org.hamcrest.Matchers.equalTo;
 
+import static utils.Constantes.*;
+
 public class IngresarAeroCivilStepDefinitions {
+
 
     @Before
     public void inicio() {
@@ -21,7 +24,7 @@ public class IngresarAeroCivilStepDefinitions {
     }
 
     @Dado("^que (.*) abre la pagina de la aueronautica$")
-    public void queUberAbreLaPaginaDeLaAueronautica( String actor) {
+    public void queUberAbreLaPaginaDeLaAueronautica(String actor) {
         theActorCalled(actor).wasAbleTo(IngresarA.aerocivil());
     }
 
@@ -33,10 +36,8 @@ public class IngresarAeroCivilStepDefinitions {
 
     @Entonces("^verifica los estados financieros$")
     public void verificaLosEstadosFinancieros() {
-        theActorInTheSpotlight().should(seeThat(EstadoVerificado.financiero(), equalTo("")));
+        theActorInTheSpotlight().should(seeThat(EstadoVerificado.financiero(), equalTo(TXT_PDF)));
     }
-
-
 
 
 }

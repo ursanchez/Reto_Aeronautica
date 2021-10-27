@@ -2,6 +2,10 @@ userinterface/AbrirNavegador.java
  userinterface.AbrirNavegador
 tasks/IngresarA.java
  tasks.IngresarA
+utils/Constantes.java
+ utils.Constantes
+questions/EstadoVerificado.java
+ questions.EstadoVerificado
 userinterface/EstadoFinanciero.java
  userinterface.EstadoFinanciero
 tasks/Estado.java

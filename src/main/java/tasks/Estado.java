@@ -41,7 +41,8 @@ public class Estado implements Task {
         CambiarPestanna(actor);
 
         actor.attemptsTo(
-
+                WaitUntil.the(PDF, isVisible()).forNoMoreThan(10).seconds(),
+                Click.on(PDF)
         );
 
     }
